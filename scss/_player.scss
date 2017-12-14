@@ -1,0 +1,262 @@
+/* Font Family
+================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+
+
+/* Global Styles
+================================================== */
+
+#music {
+-webkit-font-smoothing:antialiased;
+-webkit-text-size-adjust:100%;
+background-color:$primary;
+color:#fff;
+font-size:105%;
+font-family:"Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight:300;
+letter-spacing:.025rem;
+line-height:1.618;
+//padding:1rem 0;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+-webkit-tap-highlight-color:transparent;
+}
+
+
+/* Setup
+================================================== */
+
+#music .container { position:relative; margin:0 auto; max-width:800px; width:100%; }
+#music .column { width:inherit; }
+
+
+/* Typography / Links
+================================================== */
+
+#music p { color:#fff; display:block; font-size:.9rem; font-weight:400; margin:0 0 2px; }
+
+#music a, #music a:visited {
+	text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 700;
+    display: block;
+    padding: 10px;
+    width: 100%;
+
+}
+#music a:hover, #music a:focus {
+	text-decoration: none;
+}
+#music p a, #music p a:visited { line-height:inherit; }
+
+
+/* Misc.
+================================================== */
+
+#music .add-bottom { margin-bottom:2rem !important; }
+#music .left { float:left; }
+#music .right { float:right; }
+#music .center { text-align:center; }
+
+
+/* Audio Player Styles
+================================================== */
+
+audio {
+margin:0 15px 0 14px;
+width:670px;
+}
+
+#mainwrap {}
+
+#audiowrap,
+#plwrap {
+margin:0 auto;
+}
+
+#tracks {
+position:relative;
+text-align:center;
+}
+
+#nowPlay {
+display:inline;
+}
+
+#npAction {
+padding:21px;
+position:absolute;
+}
+
+#npTitle {
+padding:21px;
+}
+
+#plList {
+	padding: 0;
+}
+
+#plList li {
+cursor:pointer;
+display:block;
+margin:0;
+padding:21px 0;
+}
+
+#plList li:hover {
+background-color:rgba(0,0,0,.1);
+}
+
+.plItem {
+position:relative;
+}
+
+.plTitle {
+left:50px;
+overflow:hidden;
+position:absolute;
+right:65px;
+text-overflow:ellipsis;
+top:0;
+white-space:nowrap;
+}
+
+.plNum {
+padding-left:21px;
+width:25px;
+}
+
+.plLength {
+padding-left:21px;
+position:absolute;
+right:21px;
+top:0;
+}
+
+.plSel,
+.plSel:hover {
+background-color:rgba(0,0,0,.1);
+color:#fff;
+cursor:default !important;
+}
+
+#music a[id^="btn"] {
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 2rem;
+	height: 35px;
+	line-height: .3;
+	margin: 20px 20px;
+	padding: 10px;
+	text-decoration: none;
+	transition: background .3s ease;
+	width: 60px;
+}
+
+#music a[id^="btn"]:last-child {
+margin-left:-4px;
+}
+
+#music a[id^="btn"]:hover,
+#music a[id^="btn"]:active {
+background-color:rgba(0,0,0,.1);
+color:#fff;
+}
+
+#music a[id^="btn"]::-moz-focus-inner {
+border:0;
+padding:0;
+}
+
+
+/* Plyr Overrides
+================================================== */
+
+.plyr--audio .plyr__controls {
+background-color:transparent;
+border:none;
+color:#fff;
+padding:20px 20px 20px 13px;
+width:100%;
+}
+
+.plyr--audio .plyr__controls button.tab-focus:focus,
+.plyr--audio .plyr__controls button:hover,
+.plyr__play-large {
+background:rgba(0,0,0,.1);
+}
+
+.plyr__progress--played, .plyr__volume--display {
+color:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer,
+.plyr--audio .plyr__volume--display {
+background:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer {
+color:rgba(0,0,0,.1);
+}
+
+/* Accordion
+================================================== */
+
+#cgcontainer li {
+	&:hover {
+		background-color: #1c4a89;
+		color: white;
+		border: 1px solid white;
+	}
+	&:active {
+		color: #1c4a89;
+		border: 1px solid white;
+	}
+}
+
+#cgcontainer .active {
+	background-color: #1c4a89;
+	border: 1px solid white;
+}
+
+#cgcontainer .panel {
+	margin: 5px 0;
+}
+
+#services {
+	background-image: url(../img/services.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#services {
+	h2, h3, p {
+		color: white;
+	}
+}
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width:850px) {
+    #nowPlay { display:none; }
+}
+
+.panel-heading {
+    background-color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+#music .panel-title a {
+    text-decoration: none;
+    color: #1c4a89;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 4px;
+    padding: 1px 30px;
+}

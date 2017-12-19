@@ -52,7 +52,7 @@ var tracks = [{
 	"track": 6,
 	"name": "That's The Space Ticket",
 	"length": "1:53",
-	"file": "Thats_The_Space_Ticket",
+	"file": "Thats_The_Space_Ticket (Film Score)",
 	"categories": {
 		"genre": "orchestral film score",
 		"mood": "suspense mystery scary",
@@ -60,7 +60,7 @@ var tracks = [{
 	},
 }, {
 	"track": 7,
-	"name": "The Visitor Score Bounce",
+	"name": "The Visitor (Film Score)",
 	"length": "3:31",
 	"file": "The_Visitor_Score_Bounce",
 	"categories": {
